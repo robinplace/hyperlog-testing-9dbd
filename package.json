@@ -1,0 +1,35 @@
+{
+  "name": "hyperlog-testing-9dbd",
+  "version": "1.0.0",
+  "description": "Evaluating Hyperlog as my app's sync engine",
+  "author": "Robbie Wxyz",
+  "scripts": {
+    "build": "yarn build:client",
+    "build:client": "webpack --config webpack.client.js",
+    "start": "yarn start:server",
+    "start:server": "node server/index.js",
+    "proxy": "yarn proxy:client",
+    "proxy:client": "export PORT=$(mktemp -d 2>/dev/null || mktemp -d -t tmp)/sock; node server/index.js & webpack-dev-server --config webpack.client.js"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "hyperlog": "^4.12.0",
+    "memdown": "^1.2.4",
+    "websocket-stream": "^3.3.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.20.0",
+    "babel-loader": "^6.2.10",
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "style-loader": "^0.13.1",
+    "transform-loader": "^0.2.3",
+    "webpack": "^2.2.0-rc.0",
+    "webpack-dev-server": "^2.2.0-rc.0"
+  }
+}

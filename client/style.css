@@ -1,0 +1,44 @@
+* , *:before, *:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,900');
+body {
+	margin: 0;
+	padding-top: 40px;
+	font: 16px Lato;
+	background-color: #fbfbfb;
+	color: #303030;
+}
+h1, h2, h3, h4 {
+	font-weight: 300;
+}
+input {
+	outline: none;
+	border: 1px solid rgba(0,0,0,0.3);
+	background-color: #fff;
+	border-radius: 3px;
+	padding: 6px 7px 5px;
+	font: 300 14px Lato;
+}
+button {
+	outline: none;
+	border: 1px solid rgba(0,0,0,0.1);
+	background-color: #0b6;
+	color: #fff;
+	border-radius: 3px;
+	padding: 13px 37px 12px;
+	font: 600 16px Lato;
+	text-transform: uppercase;
+	cursor: pointer;
+	transition: background-color 200ms;
+}
+button:hover {
+	background-color: #0c6;
+}
+a:link,
+a:visited {
+	color: inherit;
+	text-decoration: none;
+}
